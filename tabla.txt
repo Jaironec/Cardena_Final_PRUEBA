@@ -1,0 +1,26 @@
+USE [TI2021]
+GO
+
+/****** Object:  Table [dbo].[Cardena]    Script Date: 21/02/2022 13:07:45 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Cardena](
+	[Curso] [varchar](30) NOT NULL,
+	[Anio] [int] NULL,
+	[mes] [int] NULL,
+	[horas_dictadas] [money] NULL,
+	[horas_recuperadas] [money] NULL,
+	[horas_otras] [money] NULL,
+	[horas_totales] [money] NULL,
+ CONSTRAINT [PK_Cardena] PRIMARY KEY CLUSTERED 
+(
+	[Curso] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
