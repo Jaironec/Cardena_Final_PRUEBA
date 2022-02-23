@@ -1,7 +1,7 @@
 USE [TI2021]
 GO
 
-/****** Object:  Table [dbo].[Cardena]    Script Date: 21/02/2022 13:07:45 ******/
+/****** Object:  Table [dbo].[Cardena]    Script Date: 22/02/2022 21:34:05 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -13,6 +13,7 @@ CREATE TABLE [dbo].[Cardena](
 	[Anio] [int] NULL,
 	[mes] [int] NULL,
 	[horas_dictadas] [money] NULL,
+	[horas_perdidas] [money] NULL,
 	[horas_recuperadas] [money] NULL,
 	[horas_otras] [money] NULL,
 	[horas_totales] [money] NULL,
@@ -22,5 +23,3 @@ CREATE TABLE [dbo].[Cardena](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
-
